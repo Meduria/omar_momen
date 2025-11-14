@@ -267,22 +267,42 @@
     color: #fff;
     text-decoration: none;
 }
-.about {
-  font-family: "Lato", sans-serif;
-font-size:1rem;
-  position: relative;
-  padding: 15px 20px;
-  margin: 20px 0;
-margin-right:auto;
-margin-left:auto;
-  border-left: 4px solid #800080; 
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  color: #fff; 
+#about {
+  width: 90%;
+  max-width: 750px;
+  padding: 25px 30px;
+  border-radius: 20px;
+
+  /* Glass Effect */
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+
+  color: #fff;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  animation: fadeIn 1.2s ease;
+  margin-left: auto;   /* يضمن توازن عند وضع العنصر داخل الـ container */
+  margin-right: auto;
 }
+
+#about p {
+  margin-bottom: 18px;
+}
+
+/* ===== Fade-in Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 </style>
 </head>
 <body>
@@ -360,6 +380,10 @@ margin-left:auto;
                             <span>not available</span>
                           </a>
                         </div>-->
+<div>
+<h1>Omar Momen Mohamed</h1>
+<h2>born in November 2008</h2>
+</div>
 <div id="about" class="about">
       <p>Since I was a child, I’ve always been curious about how the world works. I spent hours drawing, building small wooden models when I was twelve, and exploring game engines just to create anything that came to mind. I was also the kid who watched National Geographic endlessly, fascinated by nature, science, and anything new I could discover.</p>
 <p>
