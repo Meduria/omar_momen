@@ -17,7 +17,20 @@
     overflow-x:hidden;
   }
 
-
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 420px;      
+  height: 420px;
+  background-image: url("https://pngimg.com/uploads/planet/planet_PNG8.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.12;       
+  pointer-events: none; 
+  z-index: -1;         
+}
   /* ===== Navbar ===== */
   header {
     width:94%;
