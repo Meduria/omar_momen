@@ -337,7 +337,33 @@ align-items: center;
   position: relative;
   right: 0;
 }
+/* الأب container */
+#me {
+  display: flex;            /* لتفعيل flexbox */
+  flex-direction: column;   /* ترتيب العناصر عمودياً */
+  align-items: center;      /* تمركز العناصر عرضياً */
+  justify-content: center;  /* تمركز العناصر رأسياً */
+  min-height: 100vh;        /* لجعل div يغطي ارتفاع الشاشة */
+  text-align: center;       /* تمركز النصوص داخل العناصر */
+  background: #222;         /* لون خلفية لتوضيح النص */
+  padding: 20px;
+}
 
+/* العناوين */
+.h1-2 {
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.h2-2 {
+  color: #fff;
+  font-size: 1.2rem;
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
 </style>
 </head>
 <body>
