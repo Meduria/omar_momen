@@ -302,20 +302,39 @@
     transform: translateY(0);
   }
 }
+
+
+.h1-2, .h2-2 {
+  text-align: right;        /* محاذاة لليمين */
+  color: #fff;
+  letter-spacing: 1px;
+  margin-right: 40px;       /* الفراغ من الجهة اليمنى */
+  width: fit-content;
+}
+
+/* حجم الخطوط */
 .h1-2 {
   font-size: 2.5rem;
-  color: #fff;
-  text-align: center;
-  letter-spacing: 1px;
   margin-bottom: 5px;
 }
 
 .h2-2 {
   font-size: 1.2rem;
-  color: #f4f4f4;
-  text-align: center;
-  opacity: 0.8;
+  opacity: 0.85;
   margin-bottom: 30px;
+}
+
+/* وضعهم في الثلث الأول من الصفحة */
+.header-box {
+  width: 100%;
+  padding-top: 5vh;         /* يجعلهم نازلين قليلًا */
+  position: relative;
+}
+
+.header-box .h1-2,
+.header-box .h2-2 {
+  position: relative;
+  right: 0;
 }
 
 </style>
