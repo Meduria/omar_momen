@@ -66,7 +66,7 @@
     overflow:hidden;
     font-size:48px;
     font-weight:bold;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  filter: drop-shadow(0 0 4px #00ff00); /* توهج خفيف */
     flex-shrink:0;
   }
   .logo-circle img {
@@ -91,9 +91,10 @@ direction:ltr;
     margin-bottom:2px;
 color:#00ff2b !important;
   }
-  .typing {
+ .typing {
   background: transparent !important;
-  filter: drop-shadow(0 0 2px #00ff00);
+  box-shadow: none !important;
+  filter: none !important;
 }
   .text-section p {
     margin:0px 0;
