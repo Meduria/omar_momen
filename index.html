@@ -138,7 +138,48 @@ filter: drop-shadow(0 0 3px #00ff00);
     .text-section { max-width:100%; }
     .social-links a { font-size:24px; margin-left:15px; }
   }
+.stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    color: #fff; /* نص أبيض */
+  }
 
+  .stat-box {
+    text-align: center;
+    min-width: 110px;
+  }
+
+  .stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #fff; 
+  }
+
+  .stat-label {
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .divider {
+    width: 1px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.3); /* خط 1px خفيف */
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .stats-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .divider {
+      display: none;
+    }
+  }
   .projects {
     margin-top: 12rem;
   display: flex;
@@ -385,7 +426,35 @@ margin-left:20vh;
         <a href="https://www.instagram.com/vire_adryn/" target="_blank"><i class="fab fa-instagram"></i></a>
 <a href="https://bughunters.google.com/profile/835a8eee-5a21-40bf-b8b0-1de227265304" target="_blank"><i class="fas fa-bug"></i></a>
       </div>
+<div class="stats-container">
 
+  <div class="stat-box">
+    <h2 class="stat-number">10+</h2>
+    <p class="stat-label">Tech</p>
+  </div>
+
+  <span class="divider"></span>
+
+  <div class="stat-box">
+    <h2 class="stat-number">1+</h2>
+    <p class="stat-label">Years experience</p>
+  </div>
+
+  <span class="divider"></span>
+
+  <div class="stat-box">
+    <h2 class="stat-number">3+</h2>
+    <p class="stat-label">Languages</p>
+  </div>
+
+  <span class="divider"></span>
+
+  <div class="stat-box">
+    <h2 class="stat-number">10+</h2>
+    <p class="stat-label">Projects</p>
+  </div>
+
+</div>
 
 </div>
   </div>
