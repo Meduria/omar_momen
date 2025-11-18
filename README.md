@@ -24,7 +24,6 @@
 
   <div class="stat-box">
     <h2 class="stat-number">10+</h2>
-    <p class="stat-label">Projects</p>
   </div>
 
 </div>
