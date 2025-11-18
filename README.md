@@ -1,4 +1,8 @@
-
+        <h1><img
+  class="typing" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00eaff&duration=2000&pause=800&width=435&repeat=true&background=00000000&lines=front-end+developer;Graphic+designer;web+developer;grade12+student"
+  alt="Typing SVG"
+/></h1>
+      <h3>here you can take a look at my work,my past and my present</h3>
 <div class="stats-container">
 
   <div class="stat-box">
