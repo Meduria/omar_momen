@@ -8,20 +8,29 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
   body, html {
-    margin:0;
-    padding:0;
-    height:100%;
-width:100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
     font-family: Arial, sans-serif;
-    background:#3b0a61;
-    color:white;
-    overflow-x:hidden;
-background-image:
-  linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-  linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
-background-size: 90px 90px;
-  }
+    background: #3b0a61;
+    color: white;
+    overflow-x: hidden;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 90px 90px;
+    animation: moveGrid 20s linear infinite; /* حركة مستمرة */
+}
 
+@keyframes moveGrid {
+    0% {
+        background-position: 0 0, 0 0;
+    }
+    100% {
+        background-position: 180px 0, 180px 0; /* تكرر سلس بدون توقف */
+    }
+}
 
   /* ===== Navbar ===== */
   header {
