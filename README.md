@@ -1,4 +1,4 @@
-          <h3>here you can take a look at my work,my past and my present</h3>
+          here you can take a look at my work,my past and my present
 <div class="stats-container">
 
   <div class="stat-box">
