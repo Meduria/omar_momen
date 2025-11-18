@@ -149,58 +149,60 @@ margin:10px;
     .social-links a { font-size:24px; margin-left:15px; }
   }
 /*stats*/
+/*stats*/
 .stats-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
-    color: #fff; /* نص أبيض */
-width:min(50em,70%);
+    color: #fff;
+    width: min(50em, 70%);
+    margin: 4rem auto 2rem auto;
+    flex-wrap: wrap; /* يسمح بالانتقال للسطر إذا ضاقت الشاشة */
+}
 
-margin-top:4rem;
-margin-bottom:2rem !important;
-
-margin-left:auto;
-margin-right:auto;
-
-  }
-
-  .stat-box {
+.stat-box {
     text-align: center;
     min-width: 110px;
-  }
+}
 
-  .stat-number {
+.stat-number {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 6px;
-    color: #fff; 
-filter: drop-shadow(0 0 2px #00eaff);
-  }
+    color: #fff;
+    filter: drop-shadow(0 0 2px #00eaff);
+}
 
-  .stat-label {
+.stat-label {
     font-size: 20px;
     color: #fff;
-  }
+}
 
-  .divider {
+.divider {
     width: 1px;
     height: 45px;
-    background: rgba(255, 255, 255, 0.3); /* خط 1px خفيف */
-  }
-
-  /* Responsive */
- @media (max-width: 600px) {
-    .stats-container {
-      gap: 5;
-    }
-.stat-number{
-size:15px;
+    background: rgba(255, 255, 255, 0.3);
 }
-   .divider {
-      display: flex;
+
+/* Responsive */
+@media (max-width: 600px) {
+    .stats-container {
+        gap: 10px; /* أصغر مسافة بين العناصر */
     }
-  }
+
+    .stat-number {
+        font-size: 25px; /* أصغر رقم */
+    }
+
+    .stat-label {
+        font-size: 14px; /* أصغر نص */
+    }
+
+    .divider {
+        height: 35px; /* أصغر خط */
+    }
+}
   .projects {
     margin-top: 1rem !important;
   display: flex;
