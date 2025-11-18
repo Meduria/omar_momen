@@ -155,9 +155,9 @@ margin:10px;
     justify-content: center;
     gap: 25px;
     color: #fff;
-    width: 50em;
+    width: min(50em, 90%);
     margin: 4rem auto 2rem auto;
-    flex-wrap: wrap; /* يسمح بالانتقال للسطر إذا ضاقت الشاشة */
+    flex-wrap: wrap;
 }
 
 .stat-box {
@@ -166,7 +166,7 @@ margin:10px;
 }
 
 .stat-number {
-    font-size: 40px;
+    font-size: clamp(12px, 5vw, 40px); 
     font-weight: bold;
     margin-bottom: 6px;
     color: #fff;
@@ -174,35 +174,21 @@ margin:10px;
 }
 
 .stat-label {
-    font-size: 20px;
+    font-size: clamp(10px, 2.5vw, 20px); 
     color: #fff;
 }
 
 .divider {
     width: 1px;
-    height: 45px;
+    height: clamp(20px, 5vw, 45px); 
     background: rgba(255, 255, 255, 0.3);
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .stats-container {
-        gap: 6px; /* أصغر مسافة بين العناصر */
+        gap: 6px; 
     }
-
-    .stat-number {
-        font-size: 10px; /* أصغر رقم */
-    }
-
-    .stat-label {
-        font-size: 8px; /* أصغر نص */
-    }
-
-    .divider {
-        height: 20px; /* أصغر خط */
-    }
-}
-  .projects {
+}  .projects {
     margin-top: 1rem !important;
   display: flex;
   justify-content: center;
