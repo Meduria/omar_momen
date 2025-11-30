@@ -212,6 +212,22 @@ margin:10px;
   -webkit-backdrop-filter: blur(15px);
 }
 
+.projects {
+    margin-top: 1rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  width: 80%;
+  margin: 4rem auto;
+  padding: 4rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
 .project-card {
   width: 220px;
   height: 300px;
@@ -262,6 +278,38 @@ filter: drop-shadow(0 0 2px #00eaff);
   transform: scale(1.05);
   filter: drop-shadow(0 0 2px #00eaff);
 }
+.carousel {
+    gap:0;
+  width: 85%;
+  overflow: hidden;
+  position: relative;
+margin-right: auto;
+margin-left: auto;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: slide 20s linear infinite;
+}
+
+.projects {
+  flex-wrap: nowrap !important;
+  gap: 0rem;
+  padding:0;
+}
+.carousel .project-card {
+  margin-right: 2rem;     /* يمكنك تغييرها حسب رغبتك */
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .site-footer {
   background: rgba(59, 10, 97, 0.9); 
   color: #fff;
@@ -545,47 +593,77 @@ filter: drop-shadow(0 0 10px #00eaff);
 </div>
   </div>
 <div class="carousel">
-  <div id="work" class="projects">
-    <a href="https://coin-tracker-bice-kappa.vercel.app/" class="project-card" target="_blank">
-        <img src="https://image.thum.io/get/https://coin-tracker-bice-kappa.vercel.app/" alt="Project 1">
-        <span>coin tracker</span>
-      </a>
-
-      <a href="https://qreate-smart-qr-generator.vercel.app/" class="project-card" target="_blank">
-        <img src="https://image.thum.io/get/https://qreate-smart-qr-generator.vercel.app/" alt="Project 2">
-        <span>QR-code generator</span>
-      </a>
-
-      <a href="https://color-code-seven.vercel.app" class="project-card" target="_blank">
-        <img src="https://image.thum.io/get/https://color-code-seven.vercel.app" alt="project3">
-       <span>Color code</span>
-      </a>
-
-     
-
-
-                          <a href="https://ninjaa.myeasyorders.com/" class="project-card" target="_blank">
-                          <img src="https://image.thum.io/get/https://ninjaa.myeasyorders.com/" alt="project4">
-                            <span>online store</span>
-                          </a>
-
-                          <a href="https://simple-landing-page-mauve.vercel.app/" class="project-card" target="_blank">
-                           <img src="https://image.thum.io/get/https://simple-landing-page-mauve.vercel.app/" alt="project5">
-                           <span>landing page</span>
-                          </a>
-
-                          <a href="https://vyre-adryn-log-in-page.vercel.app/" class="project-card" target="_blank">
-                           <img src="https://image.thum.io/get/https://vyre-adryn-log-in-page.vercel.app/" alt="project6">
-                           <span>log-in page</span>
-                          </a>
-                    </div>
- </div>
-<div style="text-align: center; clear: both;">
-  <div class="my-line" 
-       style="width: 80%; height: 3px; background: #c77dff; 
-              margin: 40px auto; display: block;">
-  </div>
-</div>
+        <div class="carousel-track">
+        <div id="work" class="projects">
+          <a href="https://coin-tracker-bice-kappa.vercel.app/" class="project-card" target="_blank">
+              <img src="https://image.thum.io/get/https://coin-tracker-bice-kappa.vercel.app/" alt="Project 1">
+              <span>coin tracker</span>
+            </a>
+      
+            <a href="https://qreate-smart-qr-generator.vercel.app/" class="project-card" target="_blank">
+              <img src="https://image.thum.io/get/https://qreate-smart-qr-generator.vercel.app/" alt="Project 2">
+              <span>QR-code generator</span>
+            </a>
+      
+            <a href="https://color-code-seven.vercel.app" class="project-card" target="_blank">
+              <img src="https://image.thum.io/get/https://color-code-seven.vercel.app" alt="project3">
+             <span>Color code</span>
+            </a>
+      
+           
+      
+      
+                                <a href="https://ninjaa.myeasyorders.com/" class="project-card" target="_blank">
+                                <img src="https://image.thum.io/get/https://ninjaa.myeasyorders.com/" alt="project4">
+                                  <span>online store</span>
+                                </a>
+      
+                                <a href="https://simple-landing-page-mauve.vercel.app/" class="project-card" target="_blank">
+                                 <img src="https://image.thum.io/get/https://simple-landing-page-mauve.vercel.app/" alt="project5">
+                                 <span>landing page</span>
+                                </a>
+      
+                                <a href="https://vyre-adryn-log-in-page.vercel.app/" class="project-card" target="_blank">
+                                 <img src="https://image.thum.io/get/https://vyre-adryn-log-in-page.vercel.app/" alt="project6">
+                                 <span>log-in page</span>
+                                </a>
+                          </div>
+                          <div id="work" class="projects">
+                            <a href="https://coin-tracker-bice-kappa.vercel.app/" class="project-card" target="_blank">
+                                <img src="https://image.thum.io/get/https://coin-tracker-bice-kappa.vercel.app/" alt="Project 1">
+                                <span>coin tracker</span>
+                              </a>
+                        
+                              <a href="https://qreate-smart-qr-generator.vercel.app/" class="project-card" target="_blank">
+                                <img src="https://image.thum.io/get/https://qreate-smart-qr-generator.vercel.app/" alt="Project 2">
+                                <span>QR-code generator</span>
+                              </a>
+                        
+                              <a href="https://color-code-seven.vercel.app" class="project-card" target="_blank">
+                                <img src="https://image.thum.io/get/https://color-code-seven.vercel.app" alt="project3">
+                               <span>Color code</span>
+                              </a>
+                        
+                             
+                        
+                        
+                                                  <a href="https://ninjaa.myeasyorders.com/" class="project-card" target="_blank">
+                                                  <img src="https://image.thum.io/get/https://ninjaa.myeasyorders.com/" alt="project4">
+                                                    <span>online store</span>
+                                                  </a>
+                        
+                                                  <a href="https://simple-landing-page-mauve.vercel.app/" class="project-card" target="_blank">
+                                                   <img src="https://image.thum.io/get/https://simple-landing-page-mauve.vercel.app/" alt="project5">
+                                                   <span>landing page</span>
+                                                  </a>
+                        
+                                                  <a href="https://vyre-adryn-log-in-page.vercel.app/" class="project-card" target="_blank">
+                                                   <img src="https://image.thum.io/get/https://vyre-adryn-log-in-page.vercel.app/" alt="project6">
+                                                   <span>log-in page</span>
+                                                  </a>
+                                            </div>
+       </div>
+    </div>
    
 <div id="me" calss="me">
 <!--<div class="pic"><img class="pfp" src="#"></div>-->
