@@ -33,6 +33,12 @@ npm i @vercel/analytics
         background-position: 180px 0, 180px 0; /* تكرر سلس بدون توقف */
     }
 }
+  html:active,
+body:active {
+  transform: scale(0.9); /* يصغر أثناء اللمس */
+  transition: transform 0.1s ease; /* دخول سريع */
+}
+
 
   /* ===== Navbar ===== */
   header {
