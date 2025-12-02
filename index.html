@@ -285,17 +285,19 @@ filter: drop-shadow(0 0 2px #00eaff);
 margin-right: auto;
 margin-left: auto;
   /*background-image: url("liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper.jpg");
-    background-size: cover;      /* تجعل الخلفية تملأ العنصر */
-   /* background-position: center; /* تضع الصورة في المنتصف */
-  /*  background-repeat: no-repeat;/* تمنع التكرار */
+    background-size: cover;     
+   background-position: center;
+   background-repeat: no-repeat;*/
 }
 
 .carousel-track {
   display: flex;
   width: max-content;
-  animation: slide 20s linear infinite;
+  animation: slide 25s linear infinite;
 }
-
+carousel-track:hover{
+animation:slide 13s linear infinite;
+}
 .projects {
   flex-wrap: nowrap !important;
   gap: 0rem;
