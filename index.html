@@ -133,22 +133,28 @@ filter:none !impotant;
     font-size:18px;
   }
 
-  .social-links {
-    margin-top:20px;
-  }
+ .social-links {
+  margin-top:20px;
+}
 
-  .social-links a {
-    margin-left:20px;
-    color:white;
-    font-size:28px;
-    transition: transform .2s;
-  }
+.social-links a {
+  margin-left:20px;
+  color:white;
+  font-size:28px;
+  transition: 
+    transform .35s ease,
+    color .35s ease,
+    filter .35s ease,
+    text-shadow .35s ease;
+}
 
-  .social-links a:hover {
-    transform: scale(1.4);
-    color:#3b0a61;
-filter: drop-shadow(0 0 2px #00eaff);
-  }
+.social-links a:hover {
+  transform: scale(1.3) translateY(-4px);
+  color:#ae7cff; /* بنفسجي فاتح جذاب */
+  text-shadow: 0 0 12px rgba(174,124,255,0.8);
+  filter: drop-shadow(0 0 6px #8b20ff);
+}
+
 
   .text-section img {
     max-width:100%;
