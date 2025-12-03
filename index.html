@@ -8,9 +8,22 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-wxL6B+..." crossorigin="anonymous"
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-  * {
-  cursor: inherit;
+/* المؤشر الأساسي لكل الموقع */
+* {
+  cursor: url("cursor.png"), auto;
 }
+
+/* المؤشر عند العناصر التفاعلية */
+a:hover,
+button:hover,
+.social-links a:hover,
+.project-card:hover,
+.service-card:hover,
+.footer-tech a:hover,
+.social-footer a:hover {
+  cursor: url("pointer.png"), pointer;
+}
+
 
   body, html {
     margin: 0;
@@ -26,7 +39,7 @@
       linear-gradient(90deg, rgba(255,255,255,0.05)1px, transparent 1px);
     background-size: 90px 90px;
     animation: moveGrid 3s linear infinite; 
-    cursor: url("cursor.png"), auto;
+   
 }
 
 @keyframes moveGrid {
@@ -109,7 +122,7 @@ filter: drop-shadow(0 0 20px ##00ff00);
 .logo-circle img:hover{
   filter: drop-shadow(0 0 20px ##00ff00);
   filter: grayscale(60%);
-  cursor: url("pointer.png"), auto;
+ 
 }
   .text-section {
     flex:1;
@@ -158,7 +171,7 @@ filter:none !impotant;
   color:#ae7cff; /* بنفسجي فاتح جذاب */
   text-shadow: 0 0 12px rgba(174,124,255,0.8);
   filter: drop-shadow(0 0 6px #8b20ff);
-  cursor: url("pointer.png"), auto;
+  
 }
 
 
@@ -289,7 +302,7 @@ margin:10px;
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5),
               inset 0 0 15px rgba(255, 255, 255, 0.25);
 filter: drop-shadow(0 0 2px #00eaff);
-  cursor: url("pointer.png"), auto;
+  
 }
 
 .project-card:hover img {
@@ -359,13 +372,13 @@ animation:slide 13s linear infinite;
   margin: 0 10px;
   font-size: 1.3rem;
   transition: transform 0.3s ease, color 0.3s ease;
-  cursor: url("pointer.png"), auto;
+  
 }
 
 .social-footer a:hover {
   color: #d3b3ff; /* لمعة بنفسجية فاتحة عند المرور */
   transform: scale(1.2);
-  cursor: url("pointer.png"), auto;
+ 
 }
 .footer-tech {
   text-align: center;
@@ -379,20 +392,20 @@ margin: 2rem 0;
   margin-top:20px !important;
   margin: 0 15px;
   transition: transform 0.3s ease, color 0.3s ease;
-  cursor: url("cursor.png"), auto;
+
 }
 
 .footer-tech a:hover {
   color: #d3b3ff; 
   transform: scale(1.3);
-  cursor: url("pointer.png"), auto;
+ 
 }
 
 .Omar{
     color: #fff;
     text-decoration: none;
 filter: drop-shadow(0 0 3px #00eaff);
-  cursor: url("pointer.png"), auto;
+  
 }
 #about {
   width: min(70em,70%);
@@ -514,7 +527,7 @@ filter: drop-shadow(0 0 1px #00eaff);
     border-color: rgba(255, 255, 255, 0.35);
 filter: drop-shadow(0 0 10px #00eaff);
 
-    cursor: url("pointer.png"), auto;
+
   }
 
   .service-card img {
@@ -560,12 +573,7 @@ filter: drop-shadow(0 0 10px #00eaff);
       grid-template-columns: 1fr;
     }
   }
- body {
-  cursor: url("cursor.png"), auto !important;
-}
- a:hover, button:hover {
-  cursor: url("pointer.png"), pointer !important;
-}
+
 
 
 </style>
