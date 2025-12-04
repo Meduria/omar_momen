@@ -846,32 +846,9 @@ If there’s one thing I hope people understand about me, it’s that my journey
 </div>
 
   <script>
-  // ===== Scroll Navbar Hide / Show =====
-  let lastScroll = 0;
-  const header = document.querySelector("header");
+
   
-  window.addEventListener("scroll", () => {
-    let current = window.pageYOffset;
-  
-    if (current > lastScroll) {
-      header.style.transform = "translateY(-100%)"; 
-    } else {
-      header.style.transform = "translateY(0)"; 
-    }
-  
-    lastScroll = current;
-  });
-  
-  // ===== Smooth Scroll to Sections =====
-  document.querySelectorAll("header nav a").forEach(link => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const id = this.getAttribute("href");
-      document.querySelector(id).scrollIntoView({
-        behavior: "smooth"
-      });
-    });
-  });
+ 
   
   // ===== Cards Fade-in Animation =====
   const cards = document.querySelectorAll(".project-card, .service-card");
