@@ -582,7 +582,7 @@ filter: drop-shadow(0 0 10px #00eaff);
   width: 450px;
   height: 450px;
   overflow: hidden;
-  clip-path: ellipse(60% 80% at 100% 50%);
+  clip-path: ellipse(100% 100% at 100% 50%);
 }
 
 .fireball video {
@@ -591,10 +591,10 @@ filter: drop-shadow(0 0 10px #00eaff);
   object-fit: cover;
 
   /* أقوى مود لإزالة الخلفية الداكنة */
-  mix-blend-mode: difference;
+  mix-blend-mode: screen;
 
   /* نرفع الإضاءة حتى تختفي الخلفية نهائياً */
-  filter: brightness(3) contrast(2.2);
+  /*filter: brightness(3) contrast(2.2); */
 }
 
 </style>
