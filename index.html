@@ -582,9 +582,6 @@ filter: drop-shadow(0 0 10px #00eaff);
   width: 450px;
   height: 450px;
   overflow: hidden;
-  pointer-events: none;
-
-  /* قص الشكل نصف دائرة يمين */
   clip-path: ellipse(60% 80% at 100% 50%);
 }
 
@@ -593,11 +590,11 @@ filter: drop-shadow(0 0 10px #00eaff);
   height: 100%;
   object-fit: cover;
 
-  /* إزالة خلفية الفيديو تمامًا */
-  mix-blend-mode: lighten;
+  /* أقوى مود لإزالة الخلفية الداكنة */
+  mix-blend-mode: difference;
 
-  /* تحسين التأثير */
-  filter: brightness(1.7) contrast(1.4) saturate(1.4);
+  /* نرفع الإضاءة حتى تختفي الخلفية نهائياً */
+  filter: brightness(3) contrast(2.2);
 }
 
 </style>
