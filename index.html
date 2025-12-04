@@ -579,12 +579,13 @@ filter: drop-shadow(0 0 10px #00eaff);
   position: absolute;
   top: 0;
   right: 0;
-  width: 420px; /* عدل الحجم حسب التصميم */
-  height: 420px;
-  pointer-events: none;
+  width: 450px;
+  height: 450px;
   overflow: hidden;
-  border-radius: 50%; /* بحيث تبدو نصف دائرة مثل تصميمك */
-  clip-path: circle(60% at 100% 50%); /* قص الجزء المطلوب يمينًا */
+  pointer-events: none;
+
+  /* قص الشكل نصف دائرة يمين */
+  clip-path: ellipse(60% 80% at 100% 50%);
 }
 
 .fireball video {
@@ -592,11 +593,11 @@ filter: drop-shadow(0 0 10px #00eaff);
   height: 100%;
   object-fit: cover;
 
-  /* أهم سطر */
-  mix-blend-mode: screen;
+  /* إزالة خلفية الفيديو تمامًا */
+  mix-blend-mode: lighten;
 
-  /* تحسين شكل الوهج */
-  filter: brightness(1.6) contrast(1.3) saturate(1.4);
+  /* تحسين التأثير */
+  filter: brightness(1.7) contrast(1.4) saturate(1.4);
 }
 
 </style>
