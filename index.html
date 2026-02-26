@@ -566,7 +566,12 @@ align-items: center;
   color: #000; /* غيّر اللون لو تريد */
   letter-spacing: 1px;
 }
-  .container0{ display:grid;} 
+  .container0 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  }
   
   .service-card {
      
@@ -580,8 +585,8 @@ align-items: center;
     color: #fff;
     transition: 0.3s ease;
 filter: drop-shadow(0 0 1px #00eaff);
-    margin:10px;
-    max-width:500px;
+    margin:0px;
+    width:100%;
   }
 
   .service-card:hover {
