@@ -103,7 +103,50 @@ body:active {
     position:relative;
     right:15px;
   }
+.status-box {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.05); /* شفاف */
+    border-radius: 50px; /* شكل كبسولة */
+    border: 2px solid #00ff00;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px #00ff00;
+}
 
+/* النقطة */
+.status-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 8px #00ff00;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* النص */
+.status-text {
+    color: #00ff00;
+    font-size: 16px;
+    text-shadow: 0 0 8px #00ff00;
+}
+
+/* الانيميشن */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px #00ff00;
+    }
+    50% {
+        transform: scale(1.2);
+        box-shadow: 0 0 15px #00ff00;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px #00ff00;
+    }
+}
   .main-content {
     display:flex;
     align-items:center;
